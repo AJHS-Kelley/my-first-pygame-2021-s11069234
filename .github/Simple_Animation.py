@@ -1,6 +1,5 @@
 # Simple Animation with PyGame, Malik Durgan, 12/09/21, 9:21AM, v0.7
 
-from PyGamePractice import GREEN, RED
 import pygame, sys, time
 from pygame.locals import *
 
@@ -82,4 +81,8 @@ while True:
                     b['dir'] = DOWNLEFT
                 if b['dir'] == UPRIGHT:
                     b['dir'] = UPLEFT
-                    
+
+        # Draw the window to the screen.
+        pygame.display.update()
+        time.sleep(0.02)
+
