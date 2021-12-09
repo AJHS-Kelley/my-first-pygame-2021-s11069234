@@ -1,4 +1,4 @@
-# Simple Animation with PyGame, Malik Durgan, 12/09/21, 9:21AM, v0.7
+# Simple Animation with PyGame, Malik Durgan, 12/09/21, 9:27AM, v0.9
 
 import pygame, sys, time
 from pygame.locals import *
