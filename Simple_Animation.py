@@ -63,26 +63,28 @@ while True:
                 b['dir'] = DOWNLEFT
             if b['dir'] == UPRIGHT:
                 b['dir'] = DOWNRIGHT
-            if b['rect'].bottom > WINDOWHEIGHT:
+            if b['rect'].bottom > WINDOWHEIGHT: # Line up with 60. 
                 # The box has moved past the bottom.       
-                if b['dir'] == DOWNLEFT:
-                    b['dir'] = UPLEFT
-                if b['dir'] == DOWNRIGHT:
-                    b['dir'] = UPRIGHT
-            if b['rect'].left < 0:
+                if b['dir'] == DOWNLEFT: # Line up with 62.
+                    b['dir'] = UPLEFT # Linue up with 63.
+                if b['dir'] == DOWNRIGHT:# Line up with 62. 
+                    b['dir'] = UPRIGHT # Linue up with 63.
+            if b['rect'].left < 0: # Line up with 60. 
                 # The box has moved past the left.
-                if b['dir'] == DOWNLEFT:
-                    b['dir'] = DOWNRIGHT
-                if b['dir'] == UPLEFT:
-                    b['dir'] = UPRIGHT
-            if b['rect'].right > WINDOWWIDTH:
+                if b['dir'] == DOWNLEFT: # Line up with 62.
+                    b['dir'] = DOWNRIGHT # Linue up with 63.
+                if b['dir'] == UPLEFT: # Line up with 62.
+                    b['dir'] = UPRIGHT # Linue up with 63.
+            if b['rect'].right > WINDOWWIDTH: # Line up with 60. 
                 # The box has moved past the right.
-                if b['dir'] == DOWNRIGHT:
-                    b['dir'] = DOWNLEFT
-                if b['dir'] == UPRIGHT:
-                    b['dir'] = UPLEFT
+                if b['dir'] == DOWNRIGHT:# Line up with 62.
+                    b['dir'] = DOWNLEFT # Linue up with 63.
+                if b['dir'] == UPRIGHT: # Line up with 62.
+                    b['dir'] = UPLEFT # Linue up with 63.
+
+            # Code missing to draw the rectangles on the screen. 
 
         # Draw the window to the screen.
-        pygame.display.update()
-        time.sleep(0.02)
+        pygame.display.update() # Line up with 45. 
+        time.sleep(0.02) # Line up with 45. 
 
