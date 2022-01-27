@@ -83,7 +83,7 @@ while True:
                 b['dir'] = UPLEFT # Linue up with 63.
 
             # Draw the box onto the game surface.
-            pygame.draw.rect(windowSurface, b['color'], b['rect']) 
+        pygame.draw.rect(windowSurface, b['color'], b['rect']) 
 
         # Draw the window to the screen.
     pygame.display.update() # Line up with 45. 
