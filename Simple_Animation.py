@@ -48,14 +48,14 @@ while True:
             b['rect'].left -= MOVESPEED
             b['rect'].top += MOVESPEED
         if b['dir'] == DOWNRIGHT:
-            b['rect'].left -= MOVESPEED # += 
+            b['rect'].left += MOVESPEED
             b['rect'].top += MOVESPEED
         if b['dir'] == UPLEFT:
             b['rect'].left -= MOVESPEED 
-            b['rect'].top += MOVESPEED # -=
+            b['rect'].top -= MOVESPEED
         if b['dir'] == UPRIGHT:
-            b['rect'].left -= MOVESPEED # +=
-            b['rect'].top += MOVESPEED # -=
+            b['rect'].left += MOVESPEED
+            b['rect'].top -= MOVESPEED
 
         if b['rect'].top < 0:
             # The box has moved past the top.
