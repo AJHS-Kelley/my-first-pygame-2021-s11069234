@@ -1,4 +1,4 @@
-# PyGame Collision Detection Practice, Malik Durgan, January 27, 2022, 9:05am, v1.1a-BIGFIX
+# PyGame Collision Detection Practice, Malik Durgan, January 27, 2022, 9:27am, v2.0
 
 import pygame, sys, random
 from pygame.locals import *
@@ -107,3 +107,7 @@ while True:
     # Draw the food.
     for i in range(len(foods)):
         pygame.draw.rect(windowSurface, GREEN, foods[i])
+
+    # Draw the window to the screen.
+    pygame.display.update()
+    mainClock.tick(40)
